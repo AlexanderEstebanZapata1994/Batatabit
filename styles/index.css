@@ -1,12 +1,30 @@
 :root {
-    --base-color: #cb1517
+    --font-sans: 'DM Sans', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --light: 300;
+    --normal: 500;
+    --bold: 700;
+}
+
+:root {
+    --color-primary: #f7931a;
+    --color-primary-soft: #ffe9d5;
+    --color-secondary: #1a9af7;
+    --color-secondary-soft: #e7f5ff;
+    --color-dark-warm: #201e1c;
+    --color-dark: #282623;
+    --color-ligt-darker: #bababa;
+    --color-background: #faf8f7;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+}
+
+html {
+    font-family: var(--font-sans);
     font-size: 62.5%;
 }
 
@@ -15,4 +33,19 @@ body {
     place-items: center;
     width: 100%;
     height: 100vh;
+}
+
+/* 
+    1. Posicionamiento
+    2. Modelo caja (Box model)
+    3. Tipografía
+    4. Visuales
+    5. Otros 
+*/
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
