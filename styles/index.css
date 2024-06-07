@@ -13,8 +13,12 @@
     --color-secondary-soft: #e7f5ff;
     --color-dark-warm: #201e1c;
     --color-dark: #282623;
-    --color-ligt-darker: #bababa;
+    --color-light-darker: #bababa;
+    --color-shadow-light: #f5f5f5d1;
     --color-background: #faf8f7;
+
+    --color-white: #fff;
+    --color-black: #000;
 }
 
 * {
@@ -26,13 +30,6 @@
 html {
     font-family: var(--font-sans);
     font-size: 62.5%;
-}
-
-body {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 100vh;
 }
 
 /* 
@@ -48,4 +45,114 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    height: 334px;
+    width: 100%;
+    min-width: 320px;
+    background: linear-gradient(207.8deg, var(--color-dark-warm) 16.69%, var(--color-primary) 100%);
+}
+
+.header__image {
+    width: 150px;
+    height: 24px;
+    margin-top: 40px;
+    align-self: center;
+}
+
+.header__title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header__title-container h1 {
+    font-size: 2.4rem;
+    font-weight: var(--bold);
+    line-height: 2.6rem;
+    color: var(--color-white);
+}
+
+.header__title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: var(--normal);
+    color: var(--color-primary-soft)
+}
+
+.header__button {
+    position:absolute;
+    top: 270px;
+    left: calc(50% - 115px);
+    margin-top: 35px;
+    display: block;
+    width: 229px;
+    height: 4.8rem;
+
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: var(--bold);
+    background-color: var(--color-white);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16)
+}
+
+.header__button span {
+    background-image: url('../assets/icons/down-arrow.svg');
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+}
+
+main {
+    height: auto;
+    width: 100%;
+    min-width: 320px;
+    background-color: var(--color-white);
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container__image {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto 50px auto;
+    background-image:url('/assets/imgs/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-exchange-container__title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-exchange-container__title h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: var(--bold);
+    line-height: 2.6rem;
+    color: var(--color-black);
+}
+
+.main-exchange-container__title p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: var(--normal);
+    line-height: 1.6rem;
+    color: #757575;
 }
