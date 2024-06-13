@@ -319,3 +319,95 @@ main {
         margin-top: 40px;
     }
 }
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px;
+    background-color: var(--color-dark-warm);
+    color: var(--color-white);
+}
+
+.main-product-detail__icon {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+    background: url("/assets/icons/batata.svg") no-repeat center;
+    background-size: cover;
+}
+
+.main-product-detail__text-container {
+    margin: 20px auto;
+    text-align: center;
+}
+    
+.main-product-detail__title {        
+    font-weight: var(--bold);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.main-product-detail__content {
+    color: #808080;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.product-cards__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    background-color: rgba(40, 38, 35, 1);
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-card__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.clock-icon {
+    background: url("/assets/icons/clock.svg") no-repeat center;
+}
+
+.eye-icon {
+    background: url("/assets/icons/eye.svg") no-repeat center;
+}
+
+.currency-icon {
+    background: url("/assets/icons/dollar-sign.svg") no-repeat center;
+}
+
+.check-circle-icon {
+    background: url("/assets/icons/check-circle.svg") no-repeat center;
+}
+
+.product-card__title {
+    color: var(--color-white);
+    font-weight: var(--bold);
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.product-card__content {
+    color: #808080;
+    font-weight: var(--normal);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
