@@ -367,6 +367,7 @@ main {
     width: 90%;
     min-width: 288px;
     max-width: 400px;
+    min-height: 150px;
     background-color: rgba(40, 38, 35, 1);
     margin: 10px auto;
     padding: 20px;
@@ -410,4 +411,147 @@ main {
     font-weight: var(--normal);
     font-size: 1.4rem;
     line-height: 1.8rem;
+}
+
+.bitcoin-img-contiainer {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background: url("/assets/imgs/bitcoinbaby2x.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+.bitcoin-img-contiainer__title {
+    color: var(--color-white);
+    font-weight: var(--bold);
+    line-height: 2.6rem;
+    font-size: 2.4rem;
+    padding-top: 60px;
+}
+
+.plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding: 10px;
+}
+
+.plans-container__text {
+    width: 90%;
+    min-width: 288px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.plans-container__text h2 {
+    color: var(--color-black);
+    font-weight: var(--bold);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+}
+    
+.plans-container__text p {
+    color: rgba(117, 117, 117, 1);
+    font-weight: var(--normal);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.plans-container__cards {
+    /* width: 100%; */
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    /* margin: 0 auto;
+    display: flex;
+    flex-direction: row; */
+}
+
+.plans-container__card {
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    position: relative;
+    scroll-snap-align: center;
+    border-radius: 8px;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    margin: 50px 20px 0;
+    padding: 10px 15px;
+}
+
+.card__disclaimer {
+    position: absolute;
+    width: 100px;
+    border-radius: 8px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    top: -15px;
+    right: calc(50% - 50px);
+    margin: 0 auto;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+    font-weight: var(--bold);
+    line-height: 1.45rem;
+}
+
+.card__content {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.card__content h3 {
+    font-size: 1.4rem;
+    font-weight: var(--normal);
+    line-height: 1.8rem;
+}
+
+.card__content p:nth-child(2) {
+    margin-top: 10px;
+    font-size: 5.2rem;
+    font-weight: var(--bold);
+    line-height: 6.3rem;
+}
+
+.card__content p:nth-child(2) sup {
+    font-size: 1.2rem;
+    font-weight: var(--normal);
+    line-height: 1.4rem;
+    vertical-align: top;
+}
+
+.card__content p:nth-child(3) {
+    font-size: 1.2rem;
+    font-weight: var(--normal);
+    line-height: 1.4rem;
+    color: rgba(117, 117, 117, 1);
+    margin: 15px auto;
+    width: 150px;
+}
+
+.card__content button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px 12px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: var(--bold);
+    line-height: 1.8rem;
+    background-color: rgba(250, 248, 247, 1);
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    margin: 0 auto 25px auto;
+}
+
+.card__content button span {
+    width: 24px;
+    height: 24px;
+    background: url("/assets/icons/right-arrow.svg") no-repeat center;
+    background-size: cover;
+    margin-left: 5px;
 }
