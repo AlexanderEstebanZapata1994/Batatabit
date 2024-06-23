@@ -1,15 +1,30 @@
 .tables-container {
     display: flex;
-    width: 840px;
-    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.main-currency-table {
+    margin: 0;
+}
+
+.main-commission-container__table {
+    margin-top: 0;
+}
+
 .product-cards__container {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 930px;
     margin: 0 auto;
+    max-width: 1024px;
 }
 
 .plans-container__cards {
     justify-content: center;
+    overflow-x: hidden;
+}
+
+.bitcoin-img-contiainer {
+    background: url(/assets/imgs/bitcoinbaby.png) no-repeat center/cover;
+    background-attachment: fixed;
 }

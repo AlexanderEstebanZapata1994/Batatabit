@@ -13,7 +13,7 @@
     --color-secondary-soft: #e7f5ff;
     --color-dark-warm: #201e1c;
     --color-dark: #282623;
-    --color-light-darker: #bababa;
+    --color-light-darker: #939393;
     --color-shadow-light: #f5f5f5d1;
     --color-background: #faf8f7;
 
@@ -112,7 +112,7 @@ main {
     height: auto;
     width: 100%;
     min-width: 320px;
-    background-color: rgba(242, 229, 229, 0.306);
+    background-color: rgb(213 213 213 / 31%);
 }
 
 .main-exchange-container {
@@ -188,11 +188,7 @@ main {
 }
 
 .main-exchange-container__table {
-    width: auto;
-    min-width: 320px;
-    max-width: 500px;
     height: 300px;
-    margin: 0 auto;
 }
 
 .tables-container {
@@ -301,7 +297,7 @@ main {
     padding: 15px;
 }
 
-/* @media (min-width: 330px ) { //TODO: pending to review this
+@media (min-width: 330px ) {
     .table-go-left, .table-go-right {
         display: none;
     }
@@ -318,7 +314,7 @@ main {
     .main-commission-container__table {
         margin-top: 40px;
     }
-} */
+}
 
 .main-product-detail {
     position: relative;
@@ -417,7 +413,8 @@ main {
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background: url("/assets/imgs/bitcoinbaby2x.jpg") no-repeat center;
+    background: url(/assets/imgs/bitcoinbaby.jpg) no-repeat center/cover;
+    background-attachment: fixed;
     background-size: cover;
     text-align: center;
 }
@@ -461,7 +458,7 @@ main {
 
 .plans-container__cards {
     display: flex;
-    height: 316px;
+    height: 335px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
